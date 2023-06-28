@@ -7,6 +7,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/webhook", (req, res) => {
+  console.log(JSON.stringify(req.body));
   res.send(req.body);
 });
 
